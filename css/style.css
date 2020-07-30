@@ -1,0 +1,165 @@
+.flexbox{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.flexbox p{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#client{
+    font-size: 1.5rem;
+}
+
+.about-us{
+    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../image/gallery1.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+}
+
+#idea{
+    display: flex;
+    justify-content: space-evenly
+}
+
+#idea .btn{
+    position:relative;
+    left: 70%;
+}
+
+.service-fluid{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.location {
+    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../image/images.jpeg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+}
+
+#social{
+    margin-right: 10px;
+}
+
+.service1 .btn{
+    position:relative;
+    left: 35%;
+}
+
+/* footer .nav-items{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+} */
+
+
+/* .about-us img{
+    border-radius: 50%;
+} */
+
+.about-us h3{
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.align-items-center{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.align-items-center .nav-link{
+    font-size: 0.8rem;
+    margin-right: 1rem;
+}
+
+.carousel-caption{
+    position: absolute;
+    bottom:  50%;
+    left: 5%;
+    text-shadow: 0 1px 2px rgba(0,0,0, .6);
+    z-index: 20; 
+}
+
+/*Small (-sm-) devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+#idea{
+margin-bottom: 2rem;
+}
+
+.about-us img{
+width: 100%;
+
+}
+
+.carousel-caption{
+    position: absolute;
+    bottom:  5%;
+    left: 5%;
+    text-shadow: 0 1px 2px rgba(0,0,0, .6);
+    z-index: 20;
+}
+.flexbox{
+    display: block;
+}
+
+.flexbox a img{
+    position: relative;
+    left: 35%;
+}
+.flexbox p{
+    display: none;
+}
+
+}
+/*Medium (-md-) devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    .carousel-caption{
+        position: absolute;
+        bottom:  50%;
+        left: 10%;
+        text-shadow: 0 1px 2px rgba(0,0,0, .6);
+        z-index: 20; 
+    }
+
+    .flexbox{
+        display: flex;
+    }
+
+    .flexbox a img{
+        position: relative;;
+        left:0;
+    }
+
+    .flexbox p{
+        display: block;
+        margin-top: 0.7rem;
+    }
+    
+}
+/*Large (-lg-) devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    .carousel-caption{
+        position: absolute;
+        bottom:  50%;
+        left: 10%;
+        text-shadow: 0 1px 2px rgba(0,0,0, .6);
+        z-index: 20; 
+    }
+
+}
+/*Extra large (-xl-) devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    .carousel-caption{
+        position: absolute;
+        bottom:  50%;
+        left: 10%;
+        text-shadow: 0 1px 2px rgba(0,0,0, .6);
+        z-index: 20; 
+    }
+}
